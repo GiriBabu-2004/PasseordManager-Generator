@@ -31,5 +31,4 @@ A secure and user-friendly Password Manager built with the MERN (MongoDB, Expres
 
 ---
 
-## 📁 Project Structure
 
