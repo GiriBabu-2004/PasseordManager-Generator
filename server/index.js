@@ -13,7 +13,11 @@ const app = express()
 connectDB()
 
 // Middleware
-app.use(cors())
+app.use(cors({
+  origin: 'https://gen-lock.onrender.com',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type'],
+}))
 app.use(express.json())
 
 // Routes
