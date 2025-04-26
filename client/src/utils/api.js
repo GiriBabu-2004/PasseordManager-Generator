@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getToken } from './auth.js';
 
 const API = axios.create({
-  baseURL: 'https://genlock-backend.onrender.com',
+  baseURL: 'https://genlock-backend.onrender.com/api',
 });
 
 API.interceptors.request.use((req) => {
