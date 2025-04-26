@@ -14,7 +14,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://genlock-backend.onrender.com', form);
+      await axios.post('https://genlock-backend.onrender.com/signup', form);
       navigate('/login'); // Redirect to login after successful signup
     } catch (err) {
       alert('Signup failed! Username might be taken.');
